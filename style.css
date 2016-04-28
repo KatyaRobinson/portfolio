@@ -1,0 +1,30 @@
+#navigation-bar {
+	width: 100%;
+	min-height: 80px;
+}
+#logo {
+	display: block;
+	float: left;
+	height: 80px;
+	margin-left: 30px;
+}
+#logo img {
+	width: 150px;
+}
+
+#menu-items {
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+#menu-items li {
+	padding-top: 18px;
+}
+
+#menu-items li a:active {
+	color: #52BBCB;
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+}
