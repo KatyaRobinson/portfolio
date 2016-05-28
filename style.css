@@ -1,30 +1,133 @@
-#navigation-bar {
+@import url(http://db.onlinewebfonts.com/c/835e25300f796f9733b967383afa3675?family=SnellRoundhand+BlackScript);
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	height: 50px;
+	display:block;
+	
+}
+/* Navigation styles */
+.nav {
+background-color: #35727a;
+	opacity: 0.9;
+	margin: 0;
+	padding: 0;
+	position: fixed;
 	width: 100%;
-	min-height: 80px;
+	list-style: none;
+	text-align: right;
+	height: 50px;
+	display: block;
+	top:0;
+}
+.nav > li:first-child {
+	float: left;
 }
 #logo {
-	display: block;
-	float: left;
-	height: 80px;
-	margin-left: 30px;
+	height: 30px;
+	margin-left:20px;
 }
-#logo img {
-	width: 150px;
+.nav > li {
+	display: inline-block;
+	padding: 10px;
 }
-
-#menu-items {
-	display: block;
-	float: right;
-	margin-right: 30px;
+.nav > li:last-child {
+	margin-right: 50px;
 }
-#menu-items li {
-	padding-top: 18px;
+.nav > li > a {
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+	font-family: 'Palatino Bold','Book Antiqua','Georgia';
 }
-
-#menu-items li a:active {
-	color: #52BBCB;
+.nav > li:not(:first-child):hover {
+	background-color: #57868c;
 }
 
-.navbar-toggle {
-	margin-top: 20px;
+@media (max-width: 680px){
+	.nav {
+		display: none;
+		height: auto;
+		position: fixed;
+		top: 33px;
+		opacity: 0.9;
+	}
+	.nav > li {
+		display: block;
+		text-align: center;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.nav > li:last-child {
+		padding-bottom: 10px;
+	}
+	
+	
+	.nav-btn {
+		background-color: grey;
+		opacity: 0.9;
+		position: fixed;
+		top:0;
+		width: 100%;
+		height: auto;
+		display: block;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+		padding-right: 20px;
+		padding-bottom: 11px;
+		padding-top: 5px;
+	}
+	.nav-btn:before {
+		content: "☰";
+	}
+	
 }
+
+/* Main content styles */
+.wrapper {
+    margin: 60px auto 0px auto;
+    width: 85%;
+	font-size: 20px;
+	display:block;
+}
+.page {
+	padding-top: 50px;
+}
+
+/* Welcome page styles */
+#home {
+	display:block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 600px;
+}
+#intro {
+    background-color: black;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+#photo {
+    background-color: black;
+    display: block;
+    float: right;
+    height: 100%;
+    width: 30%;
+}
+#photo > img {
+    float: right;
+    height: 100%;
+}
+#fancy-font {
+	font-family: 'Snell Roundhand Black';
+	color: white;
+	text-align: center;
+}
+
