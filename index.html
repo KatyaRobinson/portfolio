@@ -22,31 +22,156 @@
 	<!-- Welcome page-->
 	<div id = "home">
 		<div id="intro">
-			<span id="fancy-font">Hello, World!</span>
-			<span id="intro-text">My name is Katya, I am a front end developer (in the making)</span>
+			<p id="fancy-font">Hello, World!</p>
+			<p id="intro-text">My name is Katya, <br />I am a front end web developer <br /> (in the making)</p>
+			<div class="social-links">
+			<ul class="social">
+				<li><a><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
+				<li><a><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
+				<li><a><img src="img/git-icon.png" alt="Git icon"/></a></li>
+				<li><a><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
+				</ul>
+			</div>
 		</div>
 		
 		<div id="photo">
 			<img src="img/photo-black-back.jpg" alt="Katya Gurina-Robinson photp" />
 		</div>
-	</div>
-	
-	
-	
-	
+	</div> <!-- end of #home-->
 	
 	<!--Portfolio page-->
 		
 		<div id="wrapper">
-	<div id= "portfolio" class="page"></div>
+			<div class="scroll">
+			<img src="img/scroll-icon.png" alt="Scroll Down Icon" />
+			</div>
+	<div id= "portfolio">
+		<div class="page-title">my projects</div>
+		<div id="projects">
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description. <br /> Techniques used </div>
+			</div>
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description</div>
+			</div>
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description</div>
+			</div>
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description</div>
+			</div>
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description</div>
+			</div>
+			<div class="project-container">
+				<div class="project"></div>
+				<div class="project-description">Project description</div>
+			</div>
+		</div>
+			</div>
+			<div id="skills">
+				<div class="page-title white-text"> my skills </div>
+				<div class="skill-bars">
+						<div id="skill-left-column" class="skill-column">
+							<div class="skill-bar">
+								<span class="skill secondary-font">HTML+CSS</span>
+								<div class="progress-bar">
+									<div class="skill-level" id="skill-1-level"></div>
+								</div>
+							</div>
+							
+							<div class="skill-bar">
+									<span class="skill secondary-font">
+										JavaScript</span>
+									<div class="progress-bar">
+										<div class="skill-level" id="skill-2-level"></div>
+									</div>
+							</div>
+							
+							<div class="skill-bar">
+								<span class="skill secondary-font">jQuery</span>
+								<div class="progress-bar">
+									<div class="skill-level" id="skill-3-level"></div>
+								</div>
+							</div>
+						
+					</div>
+					
+						<div id="skill-right-column" class="skill-column">
+							<div class="skill-bar">
+								<span class="skill secondary-font">Photoshop</span>
+								<div class="progress-bar">
+									<div class="skill-level" id="skill-4-level"></div>
+								</div>
+							</div>
+							<div class="skill-bar">
+									<span class="skill secondary-font">
+										PHP</span>
+									<div class="progress-bar">
+										<div class="skill-level" id="skill-5-level"></div>
+									</div>
+							</div>
+							<div class="skill-bar">
+								<span class="skill secondary-font">SQL</span>
+								<div class="progress-bar">
+									<div class="skill-level" id="skill-6-level"></div>
+								</div>
+							</div>
+							
+						</div>
+				</div> <!--end of skill bars-->
+				
+		</div>
 			
 	<!--Contact page-->
-	<div id = "contact" class="page"></div>
+	<div id = "contact" class="page">
+		<div class="page-title" id="contact-title">contact me</div>
+		<div id="contact-frame">
+			<form id="contact-form" action="mailer.php" method="post">
+				<div class="field">
+        			<label for="name">Name:</label>
+        			<input type="text" id="name" name="name" required />
+    			</div>
+				
+    			<div class="field">
+        			<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required/>
+    			</div>
+				
+    			<div class="field">
+        			<label for="message">Message:</label>
+        			<textarea id="message" name="message" required></textarea>
+				</div>
+				
+				<div class="button">
+					<button type="submit" id="submit-button">submit</button>
+				</div>
+				<div id="form-messages"></div>	
+			</form>
+		</div>	
+			</div>
 			
 			
 	</div> <!-- wrapper end -->
 	<!--Footer-->
-	<footer></footer>
+	<footer>
+		<div class="copyright-info">
+			<div class="me">Designed and developed from scratch by me </div> <img class="smiley" src="img/smiley.png" alt="Facebook icon"/>
+		</div>
+		<div class="social-links-footer">
+			<ul class="social-footer">
+				<li><a><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
+				<li><a><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
+				<li><a><img src="img/git-icon.png" alt="Git icon"/></a></li>
+				<li><a><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
+				</ul>
+			</div>
+	</footer>
 	
 </body>
 

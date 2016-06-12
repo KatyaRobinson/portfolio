@@ -1,8 +1,14 @@
 @import url(http://db.onlinewebfonts.com/c/835e25300f796f9733b967383afa3675?family=SnellRoundhand+BlackScript);
-
+.secondary-font {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+.white-text {
+	color: white!important;
+}
 body, html {
 	margin: 0;
 	padding: 0;
+	font-family: "Palatino Bold","Book Antiqua","Georgia";
 }
 
 nav {
@@ -99,13 +105,16 @@ background-color: #35727a;
 	padding-top: 50px;
 }
 
-/* Welcome page styles */
+/* Welcome section styles */
 #home {
 	display:block;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 600px;
+	-webkit-box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
+	-moz-box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
+	box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
 }
 #intro {
     background-color: black;
@@ -126,8 +135,333 @@ background-color: #35727a;
     height: 100%;
 }
 #fancy-font {
-	font-family: 'Snell Roundhand Black';
-	color: white;
+    color: white;
+    font-family: "SnellRoundhand BlackScript";
+    font-size: 65px;
+    text-align: center;
+}
+#intro-text {
+    color: white;
+    font-size: 40px;
+    padding: 0 60px;
 	text-align: center;
 }
+.social-links {
+	display: block;
+	width: 100%;
+}
+ul.social > li {
+    display: inline-block;
+    padding: 0 10px;
+}
 
+.social-links > ul {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.scroll {
+    margin-bottom: 15px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+/* Projects section styles */
+
+.page-title {
+    color: #c75c54;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 100px 0 35px;
+    padding: 0;
+    text-align: center;
+}
+
+#projects {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 745px;
+}
+
+.project {
+   background-color: #707070;
+	border: 7px solid #c75c54;
+	height: 220px;
+	margin: 0 auto;
+	width: 378px;
+}
+
+.project-container {
+    display: block;
+    float: left;
+    margin: 19px 1%;
+    min-height: 323px;
+    min-width: 378px;
+    padding-bottom: 11px;
+    width: 30%;
+}
+
+.project-description {
+    font-family: Century Gothic;
+    font-size: 23px;
+    padding: 14px 0;
+    text-align: center;
+}
+
+/* Skills section styles*/
+
+#skills {
+    border: 1px solid black;
+    display: block;
+    height: 500px;
+    width: 100%;
+	background-color: #707070;
+}
+
+.skill-column {
+    display: block;
+    float: left;
+    width: 48%;
+}
+
+.skill-bar {
+    height: 50px;
+    margin-bottom: 14px;
+}
+
+.skill {
+    color: white;
+    display: block;
+    float: left;
+    font-size: 26px;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-align: right;
+    width: 30%;
+}
+
+.progress-bar {
+    background-color: white;
+    display: block;
+    float: right;
+    height: 100%;
+    width: 63%;
+}
+.skill-level {
+    background-color: #c75c54;
+    display: block;
+    float: left;
+    height: 100%;
+}
+/* Individual skill levels*/
+/* HTML + CSS */
+
+#skill-1-level { 
+	width: 90%;
+}
+
+/* JavaScript */
+#skill-2-level {
+	width: 60%;
+}
+
+/* jQuery*/
+#skill-3-level {
+	width: 50%;
+}
+
+/* Photoshop */
+#skill-4-level {
+	width: 60%;
+}
+
+/* PHP */
+#skill-5-level {
+	width: 40%;
+}
+
+/* SQL */
+#skill-6-level {
+	width: 50%;
+}
+/* Skill level bar animation */
+
+/* Skill 1*/
+@keyframes fillIn1 {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+#skill-1-level {
+animation-duration: 2s;
+  animation-name: fillIn1;
+}
+
+/* Skill 2*/
+@keyframes fillIn2 {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 30%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+#skill-2-level {
+animation-duration: 2s;
+  animation-name: fillIn2;
+}
+
+/* Contact page styles */
+#contact {
+	height: 682px;
+	
+}
+#contact-frame {
+    border: 6px solid #C75C54;
+    height: 575px;
+    margin: 0 auto;
+	width: 90%; 
+}
+
+#contact-form {
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 90%;
+}
+
+.field {
+	height: 50px;
+}
+
+#contact-form label {
+    display: block;
+    float: left;
+    padding-top: 30px;
+    text-align: right;
+    width: 16%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 26px;
+}
+
+#contact-form input, #contact-form textarea {
+    border: 6px solid #498088;
+    float: right;
+    height: 100%;
+    margin-top: 15px;
+    width: 80%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	color: #707070;
+	padding-left: 15px;
+}
+
+#contact-form textarea {
+    height: 135px;
+}
+
+
+.button {
+    clear: both;
+    display: block;
+    margin-top: 13px;
+    padding-top: 20px;
+}
+
+#submit-button {
+    background-color: #35727a;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
+}
+
+    #form-messages {
+    clear: both;
+    display: block;
+    font-family: "Palatino Bold","Book Antiqua","Georgia";
+    font-size: 24px;
+    height: 100px;
+    padding-top: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #707070;
+    color: white;
+    height: 100px;
+    margin-top: 127px;
+    width: 100%;
+}
+
+.copyright-info {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 53%;
+}
+
+.social-links-footer {
+    display: block;
+    float: left;
+    width: 47%;
+}
+
+.social-footer li {
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+}
+
+.social-footer li:first-child {
+    padding-right: 93px;
+}
+
+.me {
+    display: block;
+    float: left;
+    font-size: 26px;
+    padding-left: 62px;
+    padding-top: 32px;
+}
+
+.smiley {
+    padding-left: 19px;
+    padding-top: 22px;
+    width: 50px;
+}
+
+@media (min-width: 1060px) and (max-width: 1200px) {
+	.project-container {
+		width: 48%;
+		margin: 4px 1%;
+	}
+	#projects {
+		height: 1070px;
+	}
+	#contact-form input, #contact-form textarea {
+		width: 75%;
+	}
+	.me {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 1059px){
+	
+}
