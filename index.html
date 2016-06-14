@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="portfolio.js"></script>
+	<script src="mailer.js"></script>
 </head>
 <body>
 		<nav>
@@ -26,16 +27,25 @@
 			<p id="intro-text">My name is Katya, <br />I am a front end web developer <br /> (in the making)</p>
 			<div class="social-links">
 			<ul class="social">
-				<li><a><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
-				<li><a><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
-				<li><a><img src="img/git-icon.png" alt="Git icon"/></a></li>
-				<li><a><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
+				<li><a href="https://www.facebook.com/katya.gurina" target="_blank"><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
+				<li><a href="https://www.linkedin.com/in/katyagurinarobinson" target="_blank"><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
+				<li><a href="https://github.com/KatyaRobinson" target="_blank"><img src="img/git-icon.png" alt="Git icon"/></a></li>
+				<li><a href="http://codepen.io/katyarobinson/" target="_blank"><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div id="photo">
 			<img src="img/photo-black-back.jpg" alt="Katya Gurina-Robinson photp" />
+		</div>
+		<!-- Black social links, only displayed in mobile menu-->
+		<div class="social-links-black">
+			<ul class="social-black">
+				<li><a href="https://www.facebook.com/katya.gurina" target="_blank"><img src="img/facebook-icon-black.png" alt="Facebook icon"/></a></li>
+				<li><a href="https://www.linkedin.com/in/katyagurinarobinson" target="_blank"><img src="img/linked-in-black.png " alt="Linked In icon"/></a></li>
+				<li><a href="https://github.com/KatyaRobinson" target="_blank"><img src="img/git-icon-black.png" alt="Git icon"/></a></li>
+				<li><a href="http://codepen.io/katyarobinson/" target="_blank"><img src="img/codepen-icon-black.png" alt="Codepen icon"/></a></li>
+			</ul>
 		</div>
 	</div> <!-- end of #home-->
 	
@@ -49,27 +59,44 @@
 		<div class="page-title">my projects</div>
 		<div id="projects">
 			<div class="project-container">
-				<div class="project"></div>
-				<div class="project-description">Project description. <br /> Techniques used </div>
+				<div class="project" id="project1">
+					<div class="project-card" id="project-card-1">
+						<p class="project-card-title">Weather App</p>
+						<p class="project-card-desc">Displays local weather</p>
+						<p class="project-card-tech">Technologies used: HTML5 Geolocation, jQuery, AJAX </p>
+					</div>
+				</div>
+				
+				<div class="project-description"> Weather App </div>
 			</div>
 			<div class="project-container">
-				<div class="project"></div>
+				<div class="project">
+					<div class="project-card" id="project-card-2">This is project card info</div>
+				</div>
 				<div class="project-description">Project description</div>
 			</div>
 			<div class="project-container">
-				<div class="project"></div>
+				<div class="project">
+						<div class="project-card" id="project-card-1">This is project card info</div>
+				</div>
 				<div class="project-description">Project description</div>
 			</div>
 			<div class="project-container">
-				<div class="project"></div>
+				<div class="project">
+				   		<div class="project-card" id="project-card-1">This is project card info</div>
+				</div>
 				<div class="project-description">Project description</div>
 			</div>
 			<div class="project-container">
-				<div class="project"></div>
+				<div class="project">
+						<div class="project-card" id="project-card-1">This is project card info</div>
+				</div>
 				<div class="project-description">Project description</div>
 			</div>
 			<div class="project-container">
-				<div class="project"></div>
+				<div class="project">
+						<div class="project-card" id="project-card-1">This is project card info</div>
+				</div>
 				<div class="project-description">Project description</div>
 			</div>
 		</div>
@@ -160,15 +187,15 @@
 	</div> <!-- wrapper end -->
 	<!--Footer-->
 	<footer>
-		<div class="copyright-info">
-			<div class="me">Designed and developed from scratch by me </div> <img class="smiley" src="img/smiley.png" alt="Facebook icon"/>
+		<div class="copyright-info footer-block">
+			<div class="me">Designed and developed from scratch by me  <img class="smiley" src="img/smiley.png" alt="Facebook icon"/> </div>
 		</div>
-		<div class="social-links-footer">
+		<div class="social-links-footer footer-block">
 			<ul class="social-footer">
-				<li><a><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
-				<li><a><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
-				<li><a><img src="img/git-icon.png" alt="Git icon"/></a></li>
-				<li><a><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
+				<li><a href="https://www.facebook.com/katya.gurina" target="_blank"><img src="img/facebook-icon.png" alt="Facebook icon"/></a></li>
+				<li><a href="https://www.linkedin.com/in/katyagurinarobinson" target="_blank"><img src="img/linked-in.png " alt="Linked In icon"/></a></li>
+				<li><a href="https://github.com/KatyaRobinson" target="_blank"><img src="img/git-icon.png" alt="Git icon"/></a></li>
+				<li><a href="http://codepen.io/katyarobinson/" target="_blank"><img src="img/codepen-icon.png" alt="Codepen icon"/></a></li>
 				</ul>
 			</div>
 	</footer>

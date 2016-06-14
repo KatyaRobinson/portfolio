@@ -1,70 +1,30 @@
 $(document).ready(function(){
 	
-//
-//	$('span.nav-btn').click(function(){
-//	$("ul.nav").slideToggle();
-//});
-//	$(window).resize(function(){
-//		$("ul.nav").removeAttr("style");
-//	})
-//	
-//	$("ul.nav > li").click(function(){
-//		if ($(window).width() < 680){
-//		$("ul.nav").slideUp();
-//		}	
-//	})
-//	$("#web-dev-love").hide();
-//});
+//	$(".project").hover(function(){
+//		$("#project-card-1").slideToggle("slow");
+//		}, function(){
+//		$("#project-card-1").slideToggle("slow");
+//	});	
+	
+$(".project").hover(function(){
+    $(this).children(".project-card").slideToggle("fast");
+    }, function(){
+    $(this).children(".project-card").slideToggle("fast");
+});		
 
-$(function() {
-
-	// Get the form.
-	var form = $('#contact-form');
-
-	// Get the messages div.
-	var formMessages = $('#form-messages');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
+$('span.nav-btn').click(function(){
+$("ul.nav").slideToggle();
+});
+});
+	
+$(window).resize(function(){
+		$("ul.nav").removeAttr("style");
 	});
 
-});
-});
+	
+	$("ul.nav > li").click(function(){
+		if ($(window).width() < 414){
+		$("ul.nav").slideUp();
+		}	
+	});
+
